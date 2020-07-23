@@ -13,6 +13,12 @@
 		E0E6DB3324C90B9C00F3B4F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E6DB3124C90B9C00F3B4F2 /* Main.storyboard */; };
 		E0E6DB3524C90BA200F3B4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E6DB3424C90BA200F3B4F2 /* Assets.xcassets */; };
 		E0E6DB3824C90BA200F3B4F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E6DB3624C90BA200F3B4F2 /* LaunchScreen.storyboard */; };
+		E0E6DB4324C90E0D00F3B4F2 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E6DB4124C90E0D00F3B4F2 /* WeatherTableViewCell.swift */; };
+		E0E6DB4424C90E0D00F3B4F2 /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E6DB4224C90E0D00F3B4F2 /* WeatherTableViewCell.xib */; };
+		E0E6DB4724C90E3500F3B4F2 /* HourlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E6DB4524C90E3500F3B4F2 /* HourlyTableViewCell.swift */; };
+		E0E6DB4824C90E3500F3B4F2 /* HourlyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E6DB4624C90E3500F3B4F2 /* HourlyTableViewCell.xib */; };
+		E0E6DB4C24C9297B00F3B4F2 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E6DB4A24C9297B00F3B4F2 /* WeatherCollectionViewCell.swift */; };
+		E0E6DB4D24C9297B00F3B4F2 /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E6DB4B24C9297B00F3B4F2 /* WeatherCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		E0E6DB3424C90BA200F3B4F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0E6DB3724C90BA200F3B4F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0E6DB3924C90BA200F3B4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E6DB4124C90E0D00F3B4F2 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		E0E6DB4224C90E0D00F3B4F2 /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
+		E0E6DB4524C90E3500F3B4F2 /* HourlyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyTableViewCell.swift; sourceTree = "<group>"; };
+		E0E6DB4624C90E3500F3B4F2 /* HourlyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyTableViewCell.xib; sourceTree = "<group>"; };
+		E0E6DB4A24C9297B00F3B4F2 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0E6DB4B24C9297B00F3B4F2 /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,9 @@
 		E0E6DB2A24C90B9C00F3B4F2 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				E0E6DB4924C9295F00F3B4F2 /* CollectionViewCell */,
+				E0E6DB4024C90DD000F3B4F2 /* HourlyCollectionCell */,
+				E0E6DB3F24C90DBD00F3B4F2 /* WeatherCell */,
 				E0E6DB2B24C90B9C00F3B4F2 /* AppDelegate.swift */,
 				E0E6DB2D24C90B9C00F3B4F2 /* SceneDelegate.swift */,
 				E0E6DB2F24C90B9C00F3B4F2 /* ViewController.swift */,
@@ -65,6 +80,33 @@
 				E0E6DB3924C90BA200F3B4F2 /* Info.plist */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		E0E6DB3F24C90DBD00F3B4F2 /* WeatherCell */ = {
+			isa = PBXGroup;
+			children = (
+				E0E6DB4124C90E0D00F3B4F2 /* WeatherTableViewCell.swift */,
+				E0E6DB4224C90E0D00F3B4F2 /* WeatherTableViewCell.xib */,
+			);
+			path = WeatherCell;
+			sourceTree = "<group>";
+		};
+		E0E6DB4024C90DD000F3B4F2 /* HourlyCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				E0E6DB4524C90E3500F3B4F2 /* HourlyTableViewCell.swift */,
+				E0E6DB4624C90E3500F3B4F2 /* HourlyTableViewCell.xib */,
+			);
+			path = HourlyCollectionCell;
+			sourceTree = "<group>";
+		};
+		E0E6DB4924C9295F00F3B4F2 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E0E6DB4A24C9297B00F3B4F2 /* WeatherCollectionViewCell.swift */,
+				E0E6DB4B24C9297B00F3B4F2 /* WeatherCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +167,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E6DB4424C90E0D00F3B4F2 /* WeatherTableViewCell.xib in Resources */,
+				E0E6DB4824C90E3500F3B4F2 /* HourlyTableViewCell.xib in Resources */,
 				E0E6DB3824C90BA200F3B4F2 /* LaunchScreen.storyboard in Resources */,
 				E0E6DB3524C90BA200F3B4F2 /* Assets.xcassets in Resources */,
 				E0E6DB3324C90B9C00F3B4F2 /* Main.storyboard in Resources */,
+				E0E6DB4D24C9297B00F3B4F2 /* WeatherCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E6DB4324C90E0D00F3B4F2 /* WeatherTableViewCell.swift in Sources */,
 				E0E6DB3024C90B9C00F3B4F2 /* ViewController.swift in Sources */,
+				E0E6DB4724C90E3500F3B4F2 /* HourlyTableViewCell.swift in Sources */,
+				E0E6DB4C24C9297B00F3B4F2 /* WeatherCollectionViewCell.swift in Sources */,
 				E0E6DB2C24C90B9C00F3B4F2 /* AppDelegate.swift in Sources */,
 				E0E6DB2E24C90B9C00F3B4F2 /* SceneDelegate.swift in Sources */,
 			);
