@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WeatherViewController.swift
 //  Weather
 //
 //  Created by Peter Bassem on 7/23/20.
@@ -14,7 +14,7 @@ import CoreLocation
 // Show Houlry Temprature For today: Custom Cell with CollectionView
 // API / Request to get the data
 
-class ViewController: UIViewController {
+class WeatherViewController: UIViewController {
     
     @IBOutlet weak var tempratureTableView: UITableView!
     
@@ -101,7 +101,7 @@ class ViewController: UIViewController {
 }
 
 //MARK: - Location
-extension ViewController: CLLocationManagerDelegate {
+extension WeatherViewController: CLLocationManagerDelegate {
     
     func setupLocation() {
         locationManager.delegate = self
@@ -119,7 +119,7 @@ extension ViewController: CLLocationManagerDelegate {
 }
 
 //MARK: - UITableView
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension WeatherViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
